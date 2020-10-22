@@ -1,0 +1,160 @@
+body{
+	font-family: Arial;
+	background-color: rgba(0,0,0,0.05)
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+.option{
+	display: inline-block;
+}
+
+.o1 ul{
+	list-style-type: circle;
+}
+.o2 ul{
+	list-style-type: square;
+}
+
+.o3 ol{
+	list-style-type: decimal;
+}
+.o4 ol{
+	list-style-type: upper-alpha;
+}
+.o5 ol{
+	list-style-type: upper-roman;
+}
+
+
+.o6{
+	display: inline-block;
+	width: 300px;
+	list-style-position: inside;
+}
+.o7{
+	display: inline-block;
+	width: 300px;
+	list-style-position: outside;
+}
+.o8{
+	list-style: circle inside;
+}
+
+table{
+	width: 600px;
+	border-spacing: 2px;
+}
+
+
+th{
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 90%;
+	border-bottom: 2px solid black;
+	border-top: 1px solid black;
+	text-align: left;
+}
+tr.even{
+	background-color: rgba(0,0,0,0.1);
+}
+tr:hover{
+	background-color: rgba(250,250,250,1);
+}
+
+th, td{
+	padding:7px 10px 10px 10px;
+}
+th:hover, td:hover{
+	background-color: rgba(240,240,240,1);
+}
+
+input{
+	font-size:120%;
+	background-color: #f2f2f2;
+	border:1px solid #bdbdbd;
+	border-radius: 5px;
+	padding: 5px 5px 5px 40px;
+	size: 10em;
+	display: block;
+	margin-bottom:10px;
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+	background-size: 25px;
+}
+
+
+input[type="text"]:focus{
+	background-color: rgba(255,255,255,0.5);
+	border: 1px solid #b1e1e4;
+}
+input[type="text"]:hover{
+	border:1px solid hsl(210,100%,50%);
+	transition-property: all;
+	transition-duration: 1s;
+}
+
+#twitter{
+	background-image: url("../images/icons/twitter.svg");
+}
+#web{
+	background-image: url("../images/icons/web.png");
+}
+#email{
+	background-image: url("../images/icons/email.jpg");
+}
+
+
+#form1 input[type="submit"]{
+	padding: 10px 20px 10px 20px;
+	background-color: rgba(0,0,0,0.05);
+}
+#form1 input[type="submit"]:hover{
+	transition-property: background-color;
+	transition-duration: 0.5s;
+	background-color: rgba(0,0,0,0.1);
+}
+
+#form1 fieldset{
+	text-align: left;
+	border-radius: 10px;
+	width: 290px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+#form1 legend{
+	font-size:90%;
+	border: 1px solid black;
+	border-radius: 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: rgba(255,255,255,0.4);
+	padding:5px 10px 5px 10px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+form#form2 input{
+	display: inline-block;
+	padding: 5px 10px 5px 10px;
+}
+
+.title{
+	vertical-align: center;
+	float:left;
+	text-align: right;
+	padding-right: 10px;
+	width: 70px;
+}
+a{
+	cursor:move;
+}
+a+a{
+	cursor:pointer;
+}
+a+a+a{
+	cursor:wait;
+}
+a+a+a+a{
+	cursor:crosshair;
+}

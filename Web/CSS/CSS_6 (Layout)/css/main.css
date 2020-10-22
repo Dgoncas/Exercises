@@ -1,0 +1,97 @@
+body{
+	font-family: Arial;
+}
+
+.header{
+	text-align: center;
+	background-color:rgba(0,0,0,0.1);
+	padding: 10px;
+	color: hsl(30, 100%, 25%);
+}
+
+p{
+	width: 800px;
+	text-align: justify;
+	color: hsl(30, 100%, 25%);
+}
+
+/*NOTICE THAT IN RELATIVE POSITION , OTHER ELEMENTS DONT GIVE
+A SCHNECKLE OF WHERE THE REALTIVE ELEMENT GO, THE OPERATE AS IF IT'S POSITION
+WERE IN NORMAL FLOW, IT´S SIZE ATRIBUTE DOES THE SAME*/
+#example1{
+	position: relative;
+	left: 100px;
+}
+
+·
+/*THE SIZE IT WOULD TAKE ON NORMAL FLOW IT'S IGNORED, AS IF
+IT WAS NOT THERE, IT'S SIZE REAJUST TO*/
+#example2{
+	position: absolute;
+	left: 800px;
+}
+
+/* SAME AS ABSOLUTE , BUT THE ELEMENT DOESN'T SCROLL WITH THE PAGE,
+IT STAYS STATIC ON TOP, KINDA LINK IN APP MENUS, NEAT */
+#example3{
+	margin-top:0px;
+	position:fixed;
+	top:0px;
+	left: 0px;
+	width: 100%;
+	background-color: rgb(230,230,230);
+	z-index: 0;
+}
+
+blockquote{
+	float:right;
+	width: 350px;
+	text-align: justify;
+	color: hsl(30, 100%, 25%);
+	font-style: italic;
+	font-size: 105%;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+}
+
+.example4{
+	margin: 10px;
+	width: 280px;
+	float:left;
+}
+.example5{
+	width: 100%;
+	overflow: auto;
+}
+
+.clear{
+	clear: left;
+}
+
+.column1{
+	width: 70%;
+	float:left;
+	margin:10px;
+}
+.column1 p{
+	width: auto;
+}
+.column2{
+	width: 20%;
+	float:left;
+	margin: 10px;
+}
+.column2 p{
+	width: auto;
+}
+
+li p{
+	height: 1em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0px;
+}
+

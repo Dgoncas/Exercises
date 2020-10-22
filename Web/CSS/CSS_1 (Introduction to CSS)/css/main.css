@@ -1,0 +1,92 @@
+/*Targets all elements in the page*/
+*{
+	font-family: Arial;
+	color: #4d4d4d ;
+}
+/*Targets the HTML elements*/
+body{
+	background-color: #e3e3e3;
+}
+
+h1{
+	color: #55c5ff;
+}
+h2{
+	color: #67cbff;
+}
+h3{
+	color: #83d3fd;
+}
+
+.note{
+	color: #838383;
+}
+/*Targets elements with a class*/
+p.note{
+	color: #838383;
+}
+
+/*targets elements with that id*/
+#top{
+	color: #0892da;
+}
+
+/*Targets and element who is a child of another*/
+li>a{
+	color: #00679c;
+}
+
+/*Targets any element that is a descendant of other (it doesn't matter if theres elements in betweem)*/
+p a{
+	color: #319467;
+}
+
+/* Targets any elements that come after other, the first one of that type*/
+h1+p{
+	padding-left: 40px;
+}
+
+/* Targetsa all elements that come after other, the first one of that type*/
+h1~p{
+	padding-left: 40px;
+}
+
+/*HOW CSS RULES CASCADE*/
+i{
+	color: green;
+}
+i{
+	color: red;
+}
+/*Last one applies*/
+
+b{
+	color: pink;
+}
+p b{
+	color: blue !important;
+}
+p b{
+	color: violet;
+}
+/*First both specific apply , then the !important one has preference*/
+
+p#intro{
+	font-size: 100%;
+}
+p{
+	font-size: 75%;
+}
+/*The more specific one applies*/
+
+.page{
+
+	border: 1px solid #4d4d4d;
+	background-color:  #b9b7a7;
+	padding: 20px;
+
+}
+
+.page h2{
+	color: #4d4d4d;
+}

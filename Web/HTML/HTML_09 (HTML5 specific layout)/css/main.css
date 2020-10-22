@@ -1,0 +1,171 @@
+
+*{
+	font-family: Arial;
+	color:black;
+	user-select: none!important;
+}
+
+html, body,h1{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+}
+html,body{
+	height: 100%;
+}
+
+header{
+	padding-top: 20px;
+	text-align: center;
+	width: 100%;
+	background-color: rgb(252,252,252);
+	box-shadow: 2px 2px 8px rgb(0,0,0,0.25);
+	z-index: 2;
+}
+nav{
+	display: block;
+}
+nav ul{
+	height: 15px;
+	padding: 0px;
+	display: block;
+	text-align: center;
+	list-style: none;
+}
+nav ul li{
+	position: relative;
+	top: 0px;
+	padding: 0px 15px;
+	display: inline-block;
+	transition-property: all;
+	transition-duration: 0.25s;
+}
+nav ul li:hover{
+	top: -6px;
+	font-size: 20px;
+	text-shadow: 0px 6px 2px rgba(0,0,0,0.2);
+	transition-property: all;
+	transition-duration: 0.25s;	
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+
+content{
+	text-align: center;
+	background-color: rgb(180,180,180);
+}
+content span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,100%);
+	vertical-align: bottom;
+	text-align: center;
+}
+
+footer{
+	box-shadow: 0px 0px 8px rgb(0,0,0,0.5);
+	background-color: rgb(220,220,220);
+	padding: 5px;
+	text-align: center;
+	
+}
+footer span{
+	padding: 0px 30px;
+}
+
+
+#page{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-flow: column;
+}
+
+header,content,footer{
+	flex: 0 1 auto;
+}
+content{
+	flex: 1 0 auto;
+}
+
+
+section{
+	height: 100%;
+	width: 70%;
+	float: left;
+}
+aside{
+	text-align: center;
+	width: 30%;
+	float: right;
+	height: 100%;
+}
+aside ul{
+	padding-left: 0px;
+	display: inline-block;
+	text-align: left;
+}
+h3{
+	margin-top: 0px;
+	padding-top: 20px;
+}
+
+aside, article{
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+article{
+	box-sizing: border-box;
+	float:left;
+	width: 300px;
+	height: auto;
+}
+
+.card{
+	padding: 30px;
+	padding-top: 0px;
+	height: 100%;
+	background-color: rgb(252,252,252);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+	transition-property: box-shadow;
+	transition-duration: 0.25s;
+}
+
+article .card:hover{
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+	transition-property: box-shadow;
+	transition-duration: 0.25s;
+}
+
+aside div{
+	height: auto!important;
+}
+
+
+hgroup{
+	text-align: left;
+}
+
+hgroup h2{
+	margin-bottom:0px;
+	padding-bottom: 0px;
+}
+hgroup h3{
+	margin-left: 60px;
+	margin-top:0px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom:0px;
+}
+hgroup h4{
+	margin-top:0px;
+	padding-top: 0px;
+	margin-left: 120px;
+}

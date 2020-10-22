@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('../fonts/ChunkFive.otf');
+}
+
+body{
+	font-family: Georgia, Times, serif;
+	font-size: 16px;
+}
+
+
+#briards h2, #briards h3{
+	font-family: ChunkFive;
+}
+#briards h2{
+	color: hsl(210,100%,40%);
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	font-size: 150%;
+}
+#briards h3{
+	color: hsl(210,100%,40%);
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.25);
+	text-indent: 10px;
+	letter-spacing: 0.05em;
+	word-spacing: 0.25em;
+	text-transform: lowercase;
+	font-size: 117%;
+}
+
+a{
+	font-weight: bold;
+	color: rgb(0,0,125);
+	text-decoration: blink;
+}
+a:hover{
+	color: rgb(125,0,0);
+	text-decoration: underline;
+}
+
+a:visited{
+	color:rgb(0,125,0);
+}
+
+a:active{
+	color: black;
+}
+
+
+p{
+	text-align-last: center;
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+.intro{
+	text-align-last: left;
+}
+
+.intro:first-letter{
+	font-size: 110%;
+}
+.intro:first-line{
+	font-style: bold;
+}
+
+.credits{
+	text-align: left;
+	text-align-last: left;
+	text-indent: 20px;
+	line-height: 0px;
+	text-decoration: underline;
+	font-family: "Courier New",Courier, monospace ;
+	font-weight: bold;
+	font-style: oblique;
+	text-transform: capitalize;
+}
+

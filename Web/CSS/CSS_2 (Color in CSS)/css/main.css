@@ -1,0 +1,119 @@
+
+*{
+	color: black;
+	font-family: Arial;
+}
+
+body{
+	background-color: rgb(200,200,200);
+}
+
+h1+h1{
+	padding-left: 30px;
+}
+
+/*FGCOLOR*/
+
+/* color name */
+#fg_color h2{
+	color: DarkCyan;
+}
+
+/* hex code */
+#fg_color h3{
+	color: #ee3e80;
+}
+
+/* rgb value */
+#fg_color p{
+	color: rgb(100,100,100);
+}
+
+/*********/
+
+/*BGCOLOR*/
+#bg_color h2{
+	color: white;
+	padding:10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: DarkCyan;
+}
+
+#bg_color h3{
+	color: white;
+	padding:10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #ee3e80;
+}
+
+#bg_color p{
+	padding:10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+
+span{
+	color: white;
+	width: 100%;
+	padding: 20px;
+	width: 200px;
+	margin: 20px;
+}
+
+h2+span{
+	background-color: Gainsboro;
+}
+
+span+span{
+	background-color: black;
+}
+
+span+span+span{
+	background-color: rgb(100,100,100);
+}
+
+#contrast h2{
+	padding-bottom: 10px;
+}
+
+#opacity div{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	margin:30px;
+}
+
+#op1{
+	opacity: 0.75;
+}
+#op2{
+	opacity: 0.5;
+}
+#op3{
+	opacity: 0.25;
+}
+
+#hsla h2{
+
+	padding: 15px;
+	background-color: AquaMarine;
+	background-color: hsla(180,100%,30%,0.75);
+	color: white;
+}
+#hsla h3{
+	margin:10px;
+	padding: 15px;
+	color: white;
+	background-color: hsla(330,100%,45%,0.75); 
+}
+
+#hsla p{
+	margin:10px;
+	padding: 15px;
+	background-color: hsla(0,100%,100%,0.5); 
+}
+
+/*********/

@@ -1,0 +1,126 @@
+<html>
+
+	<head>
+		<title>Forms in HTML</title>
+	</head>
+
+	<body>
+
+		<h1>Forms in HTML</h1>
+		<hr />
+
+		<form action="" method="get">
+
+			<p>Username: <input type="text" name="username" size="15" maxlength="30" /></p>
+
+			<p>Password : <input  type="password" name="password" size="15" maxlength="30" /></p>
+
+			<p>What do you think of ducks?</p>
+			<textarea name="comments" cols="21" rows="4">Enter your comments...</textarea>
+
+			<p>Select your favourite music genre: </p>
+			<input type="radio" name="music_genre" value="rock"/>Rock
+			<input type="radio" name="music_genre" value="jazz"/>Jazz
+			<input type="radio" name="music_genre" value="metal"/>Metal
+			<input type="radio" name="music_genre" value="hio_hop"/>Hip Hop
+
+			<p>Select which music services you use</p>
+			<input type="checkbox" name="music_service" value="itunes"/>Itunes
+			<input type="checkbox" name="music_service" value="amazon_music"/>Amazon Music
+			<input type="checkbox" name="music_service" value="spotify"/>Spotify
+
+			<p>What is your favourite animal?</p>
+			<select name="favourite_animal">
+				<option value="duck">Duck</option>
+				<option value="cow">Cow</option>
+				<option value="dog">Dog</option>
+				<option value="snake" selected="true">Snake</option>
+				<option value="dinosaur">Dinosaur</option>
+
+			</select>
+
+			<p>Do you know any of the following programing lenguajes?</p>
+			<select name="pl" size="5" multiple="multiple">
+				<option value="php">Php</option>
+				<option value="java">Java</option>
+				<option value="python">Python</option>
+				<option value="javascript">Javascript</option>
+				<option value="c">C</option>
+				<option value="c++">C++</option>
+				<option value="fortram">Fortram</option>
+			</select>
+
+			<p>
+				<input type="submit" name="upload_first_form" value="Send form"/>
+			</p>
+
+			<p><input align="middle" type="image" src="images/submit.png" width="100" /></p>
+
+			<button>
+				<img align="left" src="images/add.png" width="15" height="15" />
+				Add
+			</button>
+
+		</form>
+
+		<hr />
+
+		<form action="" method="post">
+			<p>Upload a file:</p>
+			<input type="file" name="upload_file"/>
+			<p><input type="submit" value="Upload"/></p>
+		</form>
+
+		<hr />
+
+		<h2>Correct labeling</h2>
+
+		<label>Age: <input type="text" size="15" maxlength="30" /></label>
+		<br />
+		Gender:
+		<input type="radio" id="female" name="gender" value="female"/>
+		<label for="female">Female</label>
+		<input type="radio" id="male" name="gender" value="Male" checked="checked" />
+		<label for="male">Male</label>
+
+		<hr />
+
+		<h2>Grouping form elements</h2>
+
+		<form action="" method="get">
+
+			<fieldset>
+
+				<legend>Contanct form</legend>
+
+				<label>Email:<br/><input required="true" type="text" name="email" size="15" maxlength="30" /></label><br />
+				<label>Mobile:<br/><input required="true" type="text" name="mobile" size="15" maxlength="30" /></label><br/>
+				<label>Telephone:<br/><input required="true" type="text" name="telephone" size="15" maxlength="30" /></label>
+				<p><input type="submit" value="Submit form"/></p>
+
+			</fieldset>
+
+		</form>
+
+		<hr />
+
+		<h2>Ohter type of inputs:</h2>
+		
+		<form>
+
+			<label>Departure Date: <input type="date" name="depart_date"  /></label>
+			<label> Email: <input required="true" type="email" name="email"/></label>
+			<label> URL: <input required="true" type="url" name="url" /></label>
+			<p><input type="submit" name="submit_extra" value="Submit"/></p>
+
+		</form>
+
+		<p>Search input:</p>
+		<form action="" mehtod="get">
+			<input type="search" name="search" placeholder="Enter keyword"/>
+			<input type="submit" value="search"/>
+		</form>
+
+	</body>
+
+</html>

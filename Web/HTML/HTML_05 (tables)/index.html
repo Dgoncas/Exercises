@@ -1,0 +1,158 @@
+<html>
+
+	<head>
+		<title>Tables on HTML</title>
+	</head>
+
+	<body>
+
+		<h1>Tables on HTML.</h1>
+		<hr />
+
+		<h2>Basic table</h2>
+		<table>
+			<tr>
+				<td>10</td><td>15</td><td>30</td>
+			</tr>
+			<tr>
+				<td>10</td><td>15</td><td>30</td>
+			</tr>
+			<tr>
+				<td>10</td><td>15</td><td>30</td>
+			</tr>
+		</table>
+
+		<hr />
+
+		<h2>Headings for tables:</h2>
+		<table>
+			<tr>
+				<td></td>
+				<th scope="column">Saturday</th>
+				<th scope="column">Sunday</th>
+			</tr>
+			<tr>
+				<th scope="">Tickets sold</th>
+				<td>120</td><td>135</td>
+			</tr>
+			<tr>
+				<th scope="row">Total sales</th>
+				<td>$600</td><td>$675</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h2>Spanning columns</h2>
+
+		<table>
+			<tr>
+				<td></td>
+				<th  scope="column">9am</th><th  scope="column">10am</th><th  scope="column">11am</th><th scope="column">12am</th>
+			</tr>
+			<tr>
+				<th scope="row">Monday</th>
+				<td colspan="2">Geography</td>
+				<td colspan="1">Math</td>
+				<td colspan="1">Art</td>
+			</tr>
+			<tr>
+				<th scope="row">Twesday</th>
+				<td colspan="3">Gym</td>
+				<td colspan="1">Home Ec.</td>
+			</tr>
+		</table>
+
+		<hr />
+
+		<h2>Spanning rows</h2>
+		<table>
+			<tr>
+				<td />
+				<th scope="column">ABC</th>
+				<th scope="column">BBC</th>
+				<th scope="column">CNN</th>
+			</tr>
+			<tr>
+				<th scope="row">6pm - 7pm</th>
+				<td rowspan="2">Movie</td>
+				<td rowspan="1">Comedy</td>
+				<td rowspan="1">Sports</td>
+			</tr>
+			<tr>
+				<th scope="row">7pm - 8pm</th>
+				<td rowspan="1">News</td>
+				<td rowspan="1">Current Affairs</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h2>Long tables (thead, tbody, tfoot)</h2>
+
+		<table>
+			
+			<thead>
+				<th>Date</th>
+				<th>Income</th>
+				<th>Expenditure</th>
+			</thead>
+			<tbody>
+
+				<tr>
+					<th>1st January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+
+				<tr>
+					<th>2nd January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+
+				<tr>
+					<th>3rd January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+
+				<tr>
+					<th>4th January</th>
+					<td>250</td>
+					<td>36</td>
+				</tr>
+
+			</tbody>
+
+			<tfoot>
+				<td></td>
+				<td>5123</td>
+				<td>5134</td>
+			</tfoot>
+
+		</table>
+
+		<hr />
+
+		<h2>"OLD CODE" width, spacing, border & background</h2>
+
+		<table border="2" bgcolor="#bbbbbb" cellpadding="10" cellspacing="5">
+			<tr>
+				<td width="150"></td>
+				<th width="150" scope="column">Saturday</th>
+				<th width="150" scope="column">Sunday</th>
+			</tr>
+			<tr>
+				<th scope="">Tickets sold</th>
+				<td>120</td><td>135</td>
+			</tr>
+			<tr>
+				<th scope="row">Total sales</th>
+				<td>$600</td><td>$675</td>
+			</tr>
+		</table>
+
+		<hr />
+
+	</body>
+
+</html>
