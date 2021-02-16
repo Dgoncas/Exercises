@@ -5,7 +5,6 @@ const BODYPARSER = require('body-parser');
 const app = EXPRESS();
 
 app.use('/public', EXPRESS.static(PATH.join(__dirname,'static')));
-
 app.use(BODYPARSER.urlencoded({extended: false}));
 
 app.get('/', (req, resp) => {

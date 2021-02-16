@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <title>JSON POST</title>
+        <link type="text/css" rel="stylesheet" href="/public/main.css">
+    </head>
+
+    <body>
+        
+        <form action="/" method="POST" id="form">
+            <h1>EMAIL</h1>
+            <input type="text" name="email">
+            <h1>PASSWORD</h1>
+            <input type="text" name="pass">
+            <input class="btn" type="submit" value="SUBMIT">
+        </form>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready( () => {
+                console.log('ready');
+                $('#form').submit((e) => {
+                    e.preventDefault();
+                    $.ajax({
+                        url: '/',
+                        type: 'post',
+                        contentType: 'application/x-www-form-urlencoded',
+                        data: $('#form').serialize(),
+                        success: (response) => {
+                            console.log('Got a response from the server \n');
+                            console.log(response);
+                        }
+                    });
+                });
+            });
+        </script>
+
+    </body>
+
+</html>
